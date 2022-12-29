@@ -24,7 +24,7 @@ int main(void)
 	a_head = a / 1000000000;
 	a_tail = a % 1000000000;
 	b_head = b / 1000000000;
-	b_tail = b / 1000000000;
+	b_tail = b % 1000000000;
 
 	for (; count < 99; count++)
 	{
