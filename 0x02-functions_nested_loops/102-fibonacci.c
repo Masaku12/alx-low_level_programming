@@ -9,7 +9,9 @@ int main(void)
 
 {
 	int count;
-	unsigned long i, f, sum;
+	unsigned long i;
+	unsigned long f;
+	unsigned long sum;
 
 	i = 0;
 	f = 1;
