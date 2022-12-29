@@ -9,18 +9,18 @@ int main(void)
 
 {
 	int count;
-	unsigned long n, fib, sum;
+	unsigned long i, f, sum;
 
-	n = 0;
-	fib = 1;
+	i = 0;
+	f = 1;
 
-	for (count = 0; count <= 50; count++)
+	for (count = 0; count < 50; count++)
 	{
-		sum = n + fib;
+		sum = i + f;
 		printf("%lu", sum);
 
-		n = fib;
-		fib = sum;
+		i = f;
+		f = sum;
 
 		if (count == 49)
 			printf("\n");
