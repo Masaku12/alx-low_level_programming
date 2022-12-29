@@ -9,25 +9,25 @@ int main(void)
 
 {
 	int count;
-	unsigned long i;
-	unsigned long f;
+	unsigned long a;
+	unsigned long b;
 	unsigned long sum;
 
-	i = 0;
-	f = 1;
+	a = 0;
+	b = 1;
 
 	for (count = 0; count < 50; count++)
 	{
-		sum = i + f;
+		sum = a + b;
 		printf("%lu", sum);
 
-		i = f;
-		f = sum;
+		a = b;
+		b = sum;
 
 		if (count == 49)
 			printf("\n");
 		else
-			printf(",");
+			printf(", ");
 	}
 
 	return (0);
