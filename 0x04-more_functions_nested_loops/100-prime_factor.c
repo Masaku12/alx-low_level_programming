@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	unsigned long i = 612852475143, div;
+	unsigned long i = 612852475143, div = 2;
 
 	while (div < i)
 	{
