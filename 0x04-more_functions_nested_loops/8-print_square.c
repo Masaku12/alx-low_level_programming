@@ -8,17 +8,15 @@
 
 void print_square(int size)
 {
-	int column, row;
+	int height, width;
 
 	if (size > 0)
 	{
-		for (column = 0; column < size; column++)
+		for (height = 0; height < size; height++)
 		{
-			for (row = 0; row < size; row++)
-			{
+			for (width = 0; width < size; width++)
 				_putchar('#');
-			}
-			_putchar('\n');
+				_putchar('\n');
 		}
 	}
 
