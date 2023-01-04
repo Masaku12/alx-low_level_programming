@@ -2,8 +2,8 @@
 
 /**
 * string_toupper - changes all lowercase letters of a string to uppercase
-* @str: String to be evaluated & altered
-* Return: The string containing uppercase letters
+* @str: The string to be evaluated & altered
+* Return: The final string containing uppercase letters
 */
 
 char *string_toupper(char *)
