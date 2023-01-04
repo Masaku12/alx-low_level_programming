@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
-* string_toupper - changes all lowercase letters of a string to uppercase
-* @str: The string to be evaluated & altered
+* string_toupper - changes all lowercase letters 
+* of a string to uppercase
+* @str: The string to be evaluated & then altered
 * Return: The final string containing uppercase letters
 */
 
