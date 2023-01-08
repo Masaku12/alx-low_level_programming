@@ -8,8 +8,8 @@
 
 char *leet(char *str)
 {
-	int index 1;
-	int index 2;
+	int index1;
+	int index2;
 	int i[11] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 	int j[11] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
