@@ -6,7 +6,7 @@
 * Return: The string with the capitalized words
 */
 
-char *cap_string(char *)
+char *cap_string(char *str)
 {
 	int index = 0;
 
