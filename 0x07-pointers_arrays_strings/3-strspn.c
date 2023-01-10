@@ -5,14 +5,14 @@
  * _strspn - gets the length of a prefix substring
  * @s: A string
  * @accept: The prefix containing the bytes
- * Return: the number of bytes in the initial segment of s 
+ * Return: the number of bytes in the initial segment of s
  * which consist only of bytes from accept
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int num = 0;
 	int i;
+	unsigned int num = 0;
 
 	while (*s)
 	{
@@ -24,7 +24,7 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 
-			else if (accept[i + i] == '\0')
+			else if (accept[i + 1] == '\0')
 				return (num);
 		}
 		s++;
