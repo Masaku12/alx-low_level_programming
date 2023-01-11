@@ -3,7 +3,7 @@
 
 /**
  * sq_root - Finds the natural square root of an assigned number
- * @i: The number to which we are finding the square root
+ * @i: The natural number being evaluated
  * @root: The square root
  * Return: square root, otherwise -1
  */
@@ -21,7 +21,7 @@ int sq_root(int i, int root)
 
 /**
  * _sqrt_recursion - returns the natural square root of a number
- * @n: The number being used to find the square root
+ * @n: The number being evaluated
  * Return: Square root, otherwise -1
  */
 
