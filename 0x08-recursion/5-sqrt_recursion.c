@@ -21,7 +21,7 @@ int sq_root(int i, int root)
 
 /**
  * _sqrt_recursion - returns the natural square root of a number
- * @n: The number being evaluated
+ * @i: The number being evaluated
  * Return: Square root, otherwise -1
  */
 
