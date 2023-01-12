@@ -3,7 +3,7 @@
 /**
  * factorial - Returns the factorial of a given number
  * @n: The number being used to find the factorial
- * Returns: the factorial of n OR -1
+ * Return: the factorial of n OR -1
  */
 
 int factorial(int n) /*Function definition*/
