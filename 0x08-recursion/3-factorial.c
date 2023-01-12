@@ -6,7 +6,7 @@
  * Returns: the factorial of n OR -1
  */
 
-int factorial(int n) /* declaration */
+int factorial(int n) /*Function definition*/
 {
 	if (n == 0)
 		return (1);
