@@ -26,11 +26,11 @@ int str_len(char *s)
  * Return: 1 if string is a palindrome, otherwise 0
  */
 
-int eval_palindrome(char *s, char l, char i)
+int eval_palindrome(char *s, int l, int i)
 {
-	if (*s[i] == s[l / 2])
+	if (s[i] == s[l / 2])
 		return (1);
-	if (*s[i] == s[l - i - 1])
+	if (s[i] == s[l - i - 1])
 		return (eval_palindrome(s, l, i + 1));
 	return (0);
 }
