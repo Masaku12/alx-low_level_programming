@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int n, sum = 0;
+	int num, sum = 0;
 
 	if (argc <= 1)
 	{
@@ -18,18 +18,18 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (n = 1; n < argc; n++)
+	for (num = 1; num < argc; num++)
 	{
-		if (atoi(argv[n]) == 0)
+		if (atoi(argv[num]) == 0)
 		{
 			printf("Error\n");
 			return (1);
 		}
 	}
 
-	for (n = 1; n < argc; n++)
+	for (num = 1; num < argc; num++)
 	{
-		sum += (atoi(argv[n]));
+		sum += (atoi(argv[num]));
 	}
 	printf("%d\n", sum);
 
