@@ -2,17 +2,17 @@
 #include <stdlib.h>
 
 /**
- * main - adds positive numbers
- * @argc: Argument counter
- * @argv: Argument vector
- * Return: 1 if number contains non-digits, otherwise 0
- */
+*main - adds positive numbers
+*@argc: Argument counter
+*@argv: Argument vector
+*Return: 1 if number contains non-digits, otherwise 0
+*/
 
 int main(int argc, char *argv[])
 {
 	int i, j, sum = 0;
 
-	for (i = 1; j < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
