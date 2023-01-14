@@ -5,32 +5,27 @@
  * main - adds positive numbers
  * @argc: Argument counter
  * @argv: Argument vector
- * Return: Always 0 (Success)
+ * Return: 1 if number contains non-digits, otherwise 0
  */
 
 int main(int argc, char *argv[])
 {
-	int num, sum = 0;
+	int a, b, sum = 0;
 
-	if (argc <= 1)
+	for (a = 1; b < argc; b++)
 	{
-		printf("0\n");
-		return (0);
-	}
-
-	for (num = 1; num < argc; num++)
-	{
-		if (atoi(argv[num]) == 0)
+		for (b = 0; argv[a][b] != '\0'; b++)
 		{
-			printf("Error\n");
-			return (1);
+			if (argv[a][b] < '0' || argv[a][b] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
+
+		sum += atoi(argv[a]);
 	}
 
-	for (num = 1; num < argc; num++)
-	{
-		sum += (atoi(argv[num]));
-	}
 	printf("%d\n", sum);
 
 	return (0);
