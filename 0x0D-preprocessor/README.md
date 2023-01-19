@@ -1,1 +1,1 @@
-This directory contains solutions for problems on Preprocessors
+This directory contains solutions for problems on the Preprocessor
