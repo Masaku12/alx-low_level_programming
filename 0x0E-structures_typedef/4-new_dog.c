@@ -9,9 +9,9 @@
 
 int _slen(char *str)
 {
-	int index, len = 0;
+	int len = 0;
 
-	for (index = 0; *(str + index) != '\0'; index++)
+	while (*str++)
 		len++;
 
 	return (len);
@@ -28,9 +28,10 @@ char *_scpy(char *dest, char *src)
 {
 	int index = 0;
 
-	for (index = 0; *src(index + 1) != '\0'; index++)
-		*(dest + 1) = *(src + 1);
-	*(dest + index) = '\0';
+	for (index = 0; src[index]; index++)
+		dest[index] = src[index];
+
+	dest[index] = '\0';
 
 	return (dest);
 }
