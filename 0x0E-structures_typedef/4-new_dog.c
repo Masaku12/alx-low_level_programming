@@ -12,9 +12,8 @@ int _slen(char *str)
 {
 	int len = 0;
 
-	while (*str++)
-		len++;
-
+	for (len = 0; str[len] != '\0'; len++)
+		;
 	return (len);
 }
 
@@ -27,12 +26,10 @@ int _slen(char *str)
 
 char *_scpy(char *dest, char *src)
 {
-	int index = 0;
+	int index;
 
-	for (index = 0; src[index]; index++)
+	for (index = 0; src[index] != '\0'; index++)
 		dest[index] = src[index];
-
-	dest[index] = '\0';
 
 	return (dest);
 }
@@ -48,7 +45,7 @@ char *_scpy(char *dest, char *src)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *k9;
-
+	
 	if (name == NULL || age < 0 || owner == NULL)
 		return (NULL);
 
