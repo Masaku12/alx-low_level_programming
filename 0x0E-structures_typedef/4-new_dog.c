@@ -1,10 +1,6 @@
 #include <stdlib.h>
 #include "dog.h"
 
-int _slen(char *str);
-char *_scpy(char *dest, char *src);
-dog_t *new_dog(char *name, float age, char *owner);
-
 /**
  * _slen - Finds the string length
  * @str: The string under review
@@ -13,9 +9,9 @@ dog_t *new_dog(char *name, float age, char *owner);
 
 int _slen(char *str)
 {
-	int len = 0;
+	int index, len = 0;
 
-	while (*str++)
+	for (index = 0; *(str + index) != '\0'; index++)
 		len++;
 
 	return (len);
@@ -32,10 +28,9 @@ char *_scpy(char *dest, char *src)
 {
 	int index = 0;
 
-	for (index = 0; src[index]; index++)
-		dest[index] = src[index];
-
-	dest[index] = '\0';
+	for (index = 0; *src(index + 1) != '\0'; index++)
+		*(dest + 1) = *(src + 1);
+	*(dest + index) = '\0';
 
 	return (dest);
 }
