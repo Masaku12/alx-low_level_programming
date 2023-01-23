@@ -9,7 +9,7 @@
  * Return: a pointer to the corresponding function
  */
 
-int (*get_op_func(char *s))(int a, int b)
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
@@ -21,11 +21,8 @@ int (*get_op_func(char *s))(int a, int b)
 	};
 	int i = 0;
 
-	while (ops[i].op != NULL)
-	{
-		if (*s == ops->op[i])
-			return (ops[i].f);
+	while (ops[i].op != NULL && *(ops[i].op) != *s)
 		i++;
-	}
-	return (NULL);
+
+	return (ops[i].f);
 }
