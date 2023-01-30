@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include "lists.h"
 
 /**
@@ -15,7 +16,7 @@ size_t print_list(const list_t *h)
 	size_t nodes = 0; /*A variable called nodes of type size_t*/
 
 	/* While the list is not empty, print string and its length */
-	while (h)
+	while (h != '\0')
 	{
 		if (h->str == NULL)
 			printf("[0] (nil)\n");
