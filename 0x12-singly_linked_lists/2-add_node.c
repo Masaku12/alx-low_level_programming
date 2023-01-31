@@ -16,25 +16,26 @@ list_t *add_node(list_t **head, const char *str)
 	int len;
 	list_t *new;
 
-	new = malloc(sizeof(list_t));
+	new = malloc(sizeof(list_t)); /* Allocate memory for a new node */
 	if (new == NULL)
-		return (NULL);
+		return (NULL); /* If the allocation fails, return NULL */
 
-	dup = strdup(str);
+	dup = strdup(str); /* Copy the new string to a new buffer */
 	if (dup == NULL)
 	{
-		free(new);
+		free(new); /* If the str copy fails, free the node and return NULL */
 		return (NULL);
 	}
 
-	for (len = 0; str[len];)
+	for (len = 0; str[len];) /* Calculate the length of the string */
 		len++;
 
-	new->str = dup;
+	new->str = dup; /* Set the new node's string and len members */
 	new->len = len;
-	new->next = *head;
+	new->next = *head; /* Set the new node's next member to point to
+			      the current head of the list */
 
-	*head = new;
+	*head = new; /* Set the head of the list to point to the new node */
 
-	return (new);
+	return (new); /* Return a pointer to the new node */
 }
