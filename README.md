@@ -1,1 +1,1 @@
-My first Program with C
+This repository contains solutions to problems on C programming language
