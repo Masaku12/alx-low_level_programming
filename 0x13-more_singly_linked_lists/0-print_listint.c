@@ -23,7 +23,7 @@ size_t print_listint(const listint_t *h)
 	{
 		nodes++; /* increment the nodes variable */
 		printf("%d\n", h->n); /* Print the value of the n member */
-		h = h->next;
+		h = h->next; /* set head to point to the next node */
 	}
 
 	return (nodes); /* Return the number of nodes */
