@@ -10,17 +10,19 @@
 
 void free_listint2(listint_t **head)
 {
+	/* declare a tmp pointer */
 	listint_t *tmp;
 
-	if (head == NULL)
+	if (head == NULL) /* if the head pointer is not NULL */
 		return;
 
-	while (*head)
+	while (*head) /* while the head pointer is not NULL */
 	{
-		tmp = (*head)->next;
-		free(*head);
-		*head = tmp;
+		tmp = (*head)->next; /* set the tmp pointer to */
+					/* the next node */
+		free(*head); /* free the current node */
+		*head = tmp; /* set the head pointer to the next node */
 	}
 
-	head = NULL;
+	head = NULL; /* set the head pointer to NULL */
 }
