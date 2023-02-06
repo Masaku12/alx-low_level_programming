@@ -13,14 +13,16 @@ int pop_listint(listint_t **head)
 	listint_t *tmp;
 	int headNodeData;
 
-	if (*head == NULL)
-		return (0);
+	if (*head == NULL) /* if the head pointer is NULL */
+		return (0); /* return 0 */
 
-	tmp = *head;
-	headNodeData = (*head)->n;
-	*head = (*head)->next;
+	tmp = *head; /* set the tmp pointer to the head pointer */
+	headNodeData = (*head)->n; /* store the value of the head node */
+				      /* in a variable */
+	*head = (*head)->next; /* set the head pointer to the next node */
+				  /* in the list */
 
-	free(tmp);
+	free(tmp); /* free the temporary pointer */
 
-	return (headNodeData);
+	return (headNodeData); /* return the value of the head node */
 }
