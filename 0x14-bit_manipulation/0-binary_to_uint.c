@@ -5,7 +5,8 @@
  *
  * @b: points to a string of 0 and 1 chars
  *
- * Return: the converted number or 0 if b is NULL
+ * Return: the converted number or 0 if b is NULL or contains
+ *	   chars in string that is not 0 or 1
  */
 
 unsigned int binary_to_uint(const char *b)
